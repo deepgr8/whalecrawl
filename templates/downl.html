@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Some title</title>
+  <!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}" /> -->
+</head>
+<body>
+  <h2>Form</h2>
+  <form action="/output" method="post">
+    
+  </form>
+  <div id='foo'>
+    <br>
+    {% for link in soup.findall('a') %}
+    <div class="row">
+      {{ data }} 
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
